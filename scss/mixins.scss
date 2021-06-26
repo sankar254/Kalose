@@ -1,0 +1,35 @@
+@mixin product-title {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top:35px;
+}
+@mixin desc{
+  @include product-title;
+  h4{
+    font: {
+      size:36px;
+      weight:500;
+    }
+    color:$primary-color;
+  }
+  span{
+    display: inline-block;
+    font: {
+      size:14px;
+      weight:300;
+    }
+    color:#8F9095;
+    margin: {
+      top:20px;
+      bottom:25px; 
+    }
+  }
+  p{
+    font: {
+      size:16px;
+      weight:500;
+    }
+    color:#8F9095;
+  }
+}

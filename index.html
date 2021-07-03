@@ -8,12 +8,13 @@
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<!-- <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
-
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-			<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
 			  <div class="container-fluid">
 				<a class="navbar-brand" href="#">KALOSE</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,55 +34,56 @@
 			<section class="main">
 				<div class="main-content">
 					<div class="banner">
-						<span>BEAUTY</span>
-						<h1>We’ll take<br/> it from here</h1>
-						<p>Skin care is the range of practices that<br> support skin integrity,</p>
-						<div class="btn-wrapper">
+						<span  data-aos="fade-up" data-aos-duration="1000">BEAUTY</span>
+						<h1  data-aos="fade-up" data-aos-duration="1500">We’ll take<br/> it from here</h1>
+						<p data-aos="fade-up" data-aos-duration="2000">Skin care is the range of practices that<br> support skin integrity,</p>
+						<div class="btn-wrapper" data-aos="fade-up" data-aos-duration="2500">
 							<a href="">Check Products</a>
 							<a href="">See Our Video</a>
 						</div>
 					</div>
 				</div>
-				
-				<div class="banner-img"></div>
+				<div class="banner-img" data-aos="fade-up" data-aos-duration="2000"></div>
 			</section>
 			<section class="products">
 				<div class="wrapper">
-					<h2 class="text-center">Skin Care Products</h2>
-					<a href="" class="shop-now-btn">Shop Now</a>
+					<h2 class="text-center" data-aos="fade-up" >Skin Care Products</h2>
+					<a href="" class="shop-now-btn" data-aos="fade-up" >Shop Now</a>
 				</div>
 				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							<img src="images/products/product-1.jpg">
-							<div class="prod-desc">
-								<h4>Skin & Coat</h4>
-								<span>$20 - $25</span>
-								<p>Premium support for<br/> healthy skin and shiny coat</p>
+					<div class="swiper-container productSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide text-center">
+								<img src="images/products/product-1.jpg" data-aos="fade-up" data-aos-duration="2000">
+								<div class="prod-desc">
+									<h4 data-aos="fade-up"  data-aos-duration="2000">Skin & Coat</h4>
+									<span data-aos="fade-up"  data-aos-duration="2000">$20 - $25</span>
+									<p data-aos="fade-up" data-aos-duration="2000" >Premium support for<br/> healthy skin and shiny coat</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-3">
-							<img src="images/products/product-2.jpg">
-							<div class="prod-desc">
-								<h4>Skin & Coat</h4>
-								<span>$20 - $25</span>
-								<p>Premium support for<br/> healthy skin and shiny coat</p>
+							<div class="swiper-slide text-center">
+								<img src="images/products/product-2.jpg" data-aos="fade-up" data-aos-duration="2000">
+								<div class="prod-desc">
+									<h4 data-aos="fade-up" data-aos-duration="2000" >Skin & Coat</h4>
+									<span data-aos="fade-up" data-aos-duration="2000" >$20 - $25</span>
+									<p data-aos="fade-up" data-aos-duration="2000" >Premium support for<br/> healthy skin and shiny coat</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-3">
-							<img src="images/products/product-3.jpg">
-							<div class="prod-desc">
-								<h4>Skin & Coat</h4>
-								<span>$20 - $25</span>
-								<p>Premium support for<br/> healthy skin and shiny coat</p>
+							<div class="swiper-slide text-center">
+								<img src="images/products/product-3.jpg" data-aos="fade-up" data-aos-duration="2000">
+								<div class="prod-desc">
+									<h4 data-aos="fade-up" data-aos-duration="2000" >Skin & Coat</h4>
+									<span data-aos="fade-up" data-aos-duration="2000" >$20 - $25</span>
+									<p data-aos="fade-up" data-aos-duration="2000" >Premium support for<br/> healthy skin and shiny coat</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-3">	
-							<img src="images/products/product-2.jpg">					
-							<div class="prod-desc">
-								<h4>Skin & Coat</h4>
-								<span>$20 - $25</span>
-								<p>Premium support for<br/> healthy skin and shiny coat</p>
+							<div class="swiper-slide text-center">	
+								<img src="images/products/product-2.jpg" data-aos="fade-up" data-aos-duration="2000">					
+								<div class="prod-desc">
+									<h4 data-aos="fade-up" data-aos-duration="2000" >Skin & Coat</h4>
+									<span data-aos="fade-up" data-aos-duration="2000" >$20 - $25</span>
+									<p data-aos="fade-up" data-aos-duration="2000" >Premium support for<br/> healthy skin and shiny coat</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -89,18 +91,19 @@
 			</section>
 
 			<section class="testimonials">
-				<div class="row justify-content-center align-items-center">
-					<div class="col-md-6">
-						<h2>What Our Clients<br> Say About Us</h2>
-						<a href="">Watch Video</a>
+				<div class="d-flex w-100 justify-content-center align-items-center testimonial-row">
+					<div class="col-md-12 col-lg-6 col-sm-12">
+						<h2 data-aos="fade-up"  data-aos-duration="2000">What Our Clients<br> Say About Us</h2>
+						<a href="" data-aos="fade-up"  data-aos-duration="2000">Watch Video</a>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-12 col-lg-6 col-sm-12">
 						<div class="testimonial-wrapper">
-							<h3>It is a long established fact that a reader will be distracted by the readable content.</h3>
+							<h3 data-aos="fade-up" >It is a long established fact that a reader will be distracted by the readable content.</h3>
 							<div class="testimonial-user">
-								<p>Aleena James</p>
-								<span>Modelling Artist</span>
+								<p data-aos="fade-up" >Aleena James</p>
+								<span data-aos="fade-up" >Modelling Artist</span>
 							</div>
+							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
@@ -108,65 +111,66 @@
 			
 			<section class="products">
 					<div class="wrapper">
-						<h2 class="text-center">Vitamin Tablets</h2>
-						<a href="" class="shop-now-btn">Shop Now</a>
+						<h2 class="text-center" data-aos="fade-up" >Vitamin Tablets</h2>
+						<a href="" class="shop-now-btn" data-aos="fade-up" >Shop Now</a>
 					</div>
-						<div class="row">
-							<div class="col-md-3 text-center">
-								<img src="images/products/vitamin-1.png">
-								<div class="prod-desc">
-									<h4>Naturelo</h4>
-									<span>$20 - $25</span>
-									<p>Premium support for<br/> healthy skin and shiny coat</p>
+						<div class="swiper-container mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide text-center">
+									<img src="images/products/vitamin-1.jpg" data-aos="fade-up" >
+									<div class="prod-desc">
+										<h4 data-aos="fade-up" >Naturelo</h4>
+										<span data-aos="fade-up" >$20 - $25</span>
+										<p data-aos="fade-up" >Premium support for<br/> healthy skin and shiny coat</p>
+									</div>
+								</div>
+								<div class="swiper-slide text-center">
+									<img src="images/products/vitamin-2.jpg" data-aos="fade-up" >
+									<div class="prod-desc">
+										<h4 data-aos="fade-up" >Naturelo</h4>
+										<span data-aos="fade-up" >$20 - $25</span>
+										<p data-aos="fade-up" >Premium support for<br/> healthy skin and shiny coat</p>
+									</div>
+								</div>
+								<div class="swiper-slide text-center">
+									<img src="images/products/vitamin-3.jpg" data-aos="fade-up" >
+									<div class="prod-desc">
+										<h4 data-aos="fade-up" >Skin & Coat</h4>
+										<span data-aos="fade-up" >$20 - $25</span>
+										<p data-aos="fade-up" >Premium support for<br/> healthy skin and shiny coat</p>
+									</div>
+								</div>
+								<div class="swiper-slide text-center">	
+									<img src="images/products/vitamin-4.jpg" data-aos="fade-up" >					
+									<div class="prod-desc">
+										<h4 data-aos="fade-up" >Skin & Coat</h4>
+										<span data-aos="fade-up" >$20 - $25</span>
+										<p data-aos="fade-up" >Premium support for<br/> healthy skin and shiny coat</p>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-3 text-center">
-								<img src="images/products/vitamin-2.png">
-								<div class="prod-desc">
-									<h4>Naturelo</h4>
-									<span>$20 - $25</span>
-									<p>Premium support for<br/> healthy skin and shiny coat</p>
-								</div>
-							</div>
-							<div class="col-md-3 text-center">
-								<img src="images/products/vitamin-3.png">
-								<div class="prod-desc">
-									<h4>Skin & Coat</h4>
-									<span>$20 - $25</span>
-									<p>Premium support for<br/> healthy skin and shiny coat</p>
-								</div>
-							</div>
-							<div class="col-md-3 text-center">	
-								<img src="images/products/vitamin-4.png">					
-								<div class="prod-desc">
-									<h4>Skin & Coat</h4>
-									<span>$20 - $25</span>
-									<p>Premium support for<br/> healthy skin and shiny coat</p>
-								</div>
-							</div>
+							<div class="swiper-scrollbar"></div>
 						</div>
 				</section>
-
-				<hr>
 			
 			<section class="products">
 				<div class="wrapper">
-					<h2 class="text-center">Our Benefits</h2>
+					<h2 class="text-center" data-aos="fade-up" >Our Benefits</h2>
 				</div>
 				<div class="container benefits">
 					<div class="d-flex">
-						<img src="images/icon/Asset21.svg">
-						<p>High speed delivery, anytime<br/> and from anywhere</p>
+						<img src="images/icon/Asset21.svg" data-aos="fade-up" >
+						<p data-aos="fade-up" >High speed delivery, anytime<br/> and from anywhere</p>
 					</div>
 					
 					<div class="d-flex">
-						<img src="images/icon/Asset22.svg">
-						<p>High speed delivery, anytime<br/> and from anywhere</p>
+						<img src="images/icon/Asset22.svg" data-aos="fade-up" >
+						<p data-aos="fade-up" >High speed delivery, anytime<br/> and from anywhere</p>
 					</div>
 						
 					<div class="d-flex">
-						<img src="images/icon/Asset23.svg">
-						<p>High speed delivery, anytime<br/> and from anywhere</p>
+						<img src="images/icon/Asset23.svg" data-aos="fade-up" >
+						<p data-aos="fade-up" >High speed delivery, anytime<br/> and from anywhere</p>
 					</div>
 				</div>
 			</section>
@@ -174,29 +178,45 @@
 			<footer>
 				<div class="row">
 					<div class="col-md-6">
-						<h1>It's Glow<br> Time</h1>
-						<p>2020 KALOSE LLC. Legal.</p>
+						<h1 data-aos="fade-up" >It's Glow<br> Time</h1>
+						<p data-aos="fade-up" >2020 KALOSE LLC. Legal.</p>
 					</div>
 					<div class="col-md-6 footer-map">
 						<ul>
-							<li>About Us</li>
-							<li>Co-living</li>
-							<li>FAQ's</li>
-							<li>Careers</li>
-							<li>The Journal</li>
-							<li>Serviced Living</li>
-							<li>Venue Hire</li>
-							<li>CO-working</li>
+							<li data-aos="fade-up" >About Us</li>
+							<li data-aos="fade-up" >Co-living</li>
+							<li data-aos="fade-up" >FAQ's</li>
+							<li data-aos="fade-up" >Careers</li>
+							<li data-aos="fade-up" >The Journal</li>
+							<li data-aos="fade-up" >Serviced Living</li>
+							<li data-aos="fade-up" >Venue Hire</li>
+							<li data-aos="fade-up" >CO-working</li>
 						</ul>
 						
 						<ul>
-								<li>Get in Touch</li>
-								<li>KALOSE Inc, <br>Century Park East Suite 803, <br>Los Angeles, <br>+44 (0) 207 543 5478</li>
+								<li data-aos="fade-up" >Get in Touch</li>
+								<li data-aos="fade-up" >KALOSE Inc, <br>Century Park East Suite 803, <br>Los Angeles, <br>+44 (0) 207 543 5478</li>
 							</ul>
 					</div>
 				</div>
+				
+			<div class="scroll-up"></div>
 			</footer>
+			
+			<div class="mob-menu">
+				<ul>
+					<li><i class="user-icon"></i><i class="bag-icon"><span>2</span></i></li>
+					<li><a href="">How It Works</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 	
 </html>

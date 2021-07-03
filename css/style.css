@@ -28,7 +28,6 @@ h2 {
   font-size: 80px;
   font-weight: 500;
   color: #151442;
-  margin-bottom: 100px;
 }
 
 .user-icon {
@@ -66,17 +65,23 @@ h2 {
 }
 
 nav {
-  padding: 0 100px;
+  padding: 25px 100px !important;
   z-index: 1;
 }
 nav .navbar-brand {
   font-weight: 600;
   color: #fff !important;
+  margin-left: -15px;
+}
+nav .navbar-nav {
+  margin-right: -30px;
 }
 nav ul .nav-item {
   font-size: 14px;
   font-weight: 500;
   padding: 0 10px;
+  display: flex;
+  align-items: center;
 }
 nav ul li:nth-last-child(2) {
   padding: 0 60px;
@@ -84,44 +89,55 @@ nav ul li:nth-last-child(2) {
 nav .nav-link {
   color: #151442 !important;
 }
+nav.whiteHeader {
+  background-color: #fff !important;
+  box-shadow: 0px 4px 7px 0px #1024212e;
+}
+nav.whiteHeader .navbar-brand {
+  color: #151442 !important;
+}
 
 .main {
   height: 100vh;
   position: relative;
+  margin-bottom: 80px;
 }
 .main .banner-img {
   min-width: 41vw;
-  height: 80%;
+  height: 83%;
   background-image: url(../images/banner.jpg);
+  background-position: center;
   background-size: cover;
   position: absolute;
-  left: 50%;
-  top: 10%;
+  left: 53%;
+  bottom: 25px;
 }
 .main .main-content {
-  height: 100%;
+  height: 100vh;
   background-color: #102421;
-  width: calc(100% - 750px);
+  width: 60%;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -64px;
   position: relative;
 }
 .main .main-content .banner {
   min-width: 500px;
+  margin-bottom: -13%;
+  margin-right: 16%;
 }
 .main .main-content .banner span {
   letter-spacing: 0.5em;
   font-size: 14px;
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   display: inline-block;
+  font-weight: 100;
 }
 .main .main-content .banner h1 {
   font-size: 88px;
-  line-height: 94px;
-  font-weight: 500;
+  line-height: 105px;
+  font-weight: 600;
   margin-bottom: 46px;
 }
 .main .main-content .banner p {
@@ -142,6 +158,7 @@ nav .nav-link {
   font-weight: 300;
   color: #102522;
   border-radius: 50px;
+  overflow: hidden;
 }
 .main .main-content .banner .btn-wrapper a:first-child {
   margin-right: 50px;
@@ -150,7 +167,7 @@ nav .nav-link {
 .shop-now-btn {
   border: 1px solid #102421;
   border-radius: 50px;
-  padding: 18px 60px 18px 20px;
+  padding: 18px 70px 18px 30px;
   font-size: 17px;
   font-weight: 300;
   text-decoration: none;
@@ -167,15 +184,19 @@ nav .nav-link {
 }
 
 .products {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .products .wrapper {
   position: relative;
+  margin-bottom: 100px;
 }
 .products .wrapper .shop-now-btn {
   position: absolute;
   right: 10%;
-  bottom: 15px;
+  bottom: 14px;
+}
+.products .mySwiper .swiper-wrapper {
+  margin-left: 65px !important;
 }
 .products .prod-desc {
   display: flex;
@@ -198,20 +219,28 @@ nav .nav-link {
 }
 .products .prod-desc p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   color: #8F9095;
+  text-align: center;
 }
 .products img {
-  width: 296px;
-  height: 356px;
   object-fit: cover;
+  max-width: 400px;
+}
+.products .swiper-wrapper {
+  margin-bottom: 40px !important;
 }
 
 .testimonials {
-  padding: 70px;
+  margin: 80px 0;
+  padding: 100px;
   background-image: url(../images/bg-banner.jpg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .testimonials h2 {
   color: #fff;
@@ -226,7 +255,8 @@ nav .nav-link {
 .testimonials .testimonial-wrapper {
   background-color: #FFF3F3;
   max-width: 800px;
-  padding: 100px;
+  padding: 110px 100px;
+  float: right;
 }
 .testimonials .testimonial-wrapper h3 {
   font-size: 50px;
@@ -258,9 +288,9 @@ nav .nav-link {
 }
 .testimonials .testimonial-wrapper p {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 22px;
-  text-align: right;
 }
 .testimonials .testimonial-wrapper span {
   font-size: 16px;
@@ -269,11 +299,9 @@ nav .nav-link {
   display: inline-block;
 }
 .testimonials .testimonial-wrapper .testimonial-user {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: flex-end;
   padding-right: 50px;
+  margin-top: 30px;
+  float: right;
 }
 
 .benefits {
@@ -296,8 +324,10 @@ nav .nav-link {
 }
 
 footer {
+  margin-top: 160px;
   background-color: #102421;
-  padding: 70px;
+  padding: 150px 100px;
+  position: relative;
 }
 footer p {
   color: #fff;
@@ -327,14 +357,240 @@ footer .footer-map {
   display: flex;
   justify-content: space-evenly;
 }
+footer .scroll-up {
+  display: none;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  background-image: url(../images/icon/footer-arrow.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: absolute;
+  right: 100px;
+  top: 10%;
+  background-size: 50%;
+  border: 1px solid #fff;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background-position: 10px 10px;
+}
 
-@media (max-width: 1366px) {
-  .main .banner-img {
-    min-width: 45vw;
-    left: 45%;
+.mob-menu {
+  display: none;
+}
+
+button.navbar-toggler {
+  border: 0;
+}
+button.navbar-toggler span.navbar-toggler-icon {
+  background-image: url(../images/icon/menu.svg);
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 1440px) {
+  .main .main-content .banner h1 {
+    font-size: 78px;
+    line-height: 86px;
+    margin-bottom: 36px;
   }
+  .main .main-content .banner span {
+    font-size: 14px;
+    margin-bottom: 13px;
+    margin-bottom: 13px;
+  }
+  .main .main-content .banner .btn-wrapper {
+    margin-top: 85px;
+  }
+  .main .main-content .banner p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .shop-now-btn {
+    padding: 12px 54px 12px 14px;
+  }
+  .shop-now-btn:before {
+    top: 18px;
+  }
+
+  h2 {
+    font-size: 66px;
+  }
+
+  .testimonials .testimonial-wrapper h3 {
+    font-size: 42px;
+    line-height: 67px;
+  }
+
+  footer h1 {
+    font-size: 78px;
+    line-height: 86px;
+  }
+}
+@media (max-width: 1200px) {
+  .testimonials .testimonial-wrapper {
+    padding: 80px;
+  }
+  .testimonials .testimonial-wrapper h3 {
+    font-size: 34px;
+    line-height: 59px;
+  }
+  .testimonials .testimonial-wrapper h3:before, .testimonials .testimonial-wrapper h3:after {
+    width: 30px;
+    height: 26px;
+  }
+}
+@media (max-width: 1024px) {
+  .products .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .products .wrapper .shop-now-btn {
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+    margin-top: 50px;
+  }
+
+  nav.whiteHeader .nav-link {
+    filter: initial;
+  }
+
+  .nav-link {
+    filter: invert(1) grayscale(1);
+  }
+  .nav-link .user-icon {
+    filter: invert(1) grayscale(1);
+  }
+
   .main .main-content {
-    width: calc(100% - 670px);
+    width: 100%;
+  }
+  .main .banner-img {
+    display: none;
+  }
+  .main .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main .banner h1, .main .banner p {
+    text-align: center;
+  }
+
+  .testimonials {
+    height: inherit;
+  }
+  .testimonials .testimonial-row {
+    flex-direction: column;
+  }
+  .testimonials .testimonial-row .col-lg-6 {
+    width: 100%;
+  }
+  .testimonials .testimonial-wrapper {
+    margin-top: 50px;
+  }
+
+  .benefits p br {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  nav.whiteHeader {
+    background-color: #102421 !important;
+  }
+  nav.whiteHeader .navbar-brand {
+    color: #fff !important;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .mob-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 36, 33, 0.99);
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+    transform: translateY(-100%);
+    transition: 0.3s;
+  }
+  .mob-menu ul {
+    padding: 0;
+  }
+  .mob-menu ul li {
+    list-style-type: none;
+  }
+  .mob-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .mob-menu ul li:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .mob-menu ul li:first-child .bag-icon {
+    filter: invert(1) grayscale(1);
+  }
+  .mob-menu.active {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    padding: 0 60px;
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+  .benefits p br {
+    display: block;
+  }
+  .benefits > div {
+    margin-top: 100px;
+  }
+  .benefits > div:first-child {
+    margin-top: 0;
+  }
+
+  .products .mySwiper .swiper-wrapper {
+    margin-left: 0px !important;
+  }
+
+  .testimonials .testimonial-wrapper {
+    padding: 80px;
+    margin-top: 40px;
+  }
+
+  footer .footer-map {
+    justify-content: end;
+    flex-direction: column;
+  }
+  footer .footer-map ul {
+    padding: 0;
   }
 }
 
